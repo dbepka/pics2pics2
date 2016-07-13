@@ -1,0 +1,80 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/gallery/gallery.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.gallery {
+  position: relative;
+  background-color: #F8F8FF;
+
+  &__carousel {
+
+    img {
+      height: 456px;
+    }
+  }
+
+  &__msg {
+    font-size: 26px;
+    line-height: 71px;
+    letter-spacing: 0.12em;
+    color: #04c;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 33px;
+    padding-bottom: 43px;
+
+    a {
+      color: #04c;
+      text-decoration: underline;
+
+      &:hover {
+        color: #04c;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__hidden-msg {
+    display: none;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.12em;
+    color: #051945;
+    text-align: center;
+    width: 957px;
+    height: 399px;
+    padding: 0 282px 0;
+    margin: auto;
+    background: url(../img/bg-demo.jpg) 50% 0 no-repeat;
+  }
+
+  &__hidden-msg-text {
+    padding-top: 81px;
+  }
+
+  .owl-prev,
+  .owl-next {
+    font-size: 0;
+    width: 50px;
+    height: 79px;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: 0.7;
+
+    &:hover, &:focus {
+      opacity: 1;
+    }
+  }
+  .owl-prev {
+    left: 10px;
+    background: url(../../img/icon-arr-left--hover.svg) center no-repeat;
+  }
+  .owl-next {
+    right: 10px;
+    background: url(../../img/icon-arr-right--hover.svg) center no-repeat;
+  }
+}

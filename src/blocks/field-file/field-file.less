@@ -1,0 +1,30 @@
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.field-file {
+  display: block;
+  margin-bottom: (@line-height / 2);
+
+  &__name {
+    display: block;
+    margin-bottom: round(@line-height / 4, 2);
+  }
+
+  &__input-wrap {}
+
+  &__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+
+    &:focus ~ .field-file__name-text {
+      .focus();
+      box-shadow: none;
+    }
+  }
+
+  &__help-text {
+    .help-text();
+  }
+}
