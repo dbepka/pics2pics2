@@ -1,0 +1,65 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/delivery/delivery.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.delivery {
+  text-align: center;
+
+  &__msg {
+    margin: 0;
+    background-color: #2ac1a0;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.18em;
+    color: #0044cc;
+    text-transform: uppercase;
+    padding: 46px 20px;
+  }
+
+  &__wrapper {
+    display: flex;
+    height: 340px;
+  }
+
+  &__left {
+    width: 540px;
+    min-width: 540px;
+    background-color: #808080;
+    position: relative;
+    overflow: hidden;
+
+    video {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+
+  &__left-msg {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 26px;
+    line-height: 120%;
+    letter-spacing: 0.1em;
+    width: 340px;
+    margin: auto;
+    padding-top: 31px;
+  }
+
+  &__right {
+    flex-grow: 1;
+  }
+
+  &__map {
+    height: 340px;
+  }
+
+}

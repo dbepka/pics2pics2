@@ -1,0 +1,46 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/social/social.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.social {
+  text-align: center;
+  margin-bottom: 62px;
+
+  &__list {
+    margin: 0;
+    margin-bottom: 58px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {}
+
+  &__link {
+    display: block;
+    width: 77px;
+    height: 77px;
+    font-size: 0;
+    color: transparent;
+
+    &--vk {
+      background-color: #64b5f6;
+    }
+    &--fb {
+      background-color: #9fa8da;
+    }
+    &--tw {
+      background-color: #00044c;
+    }
+  }
+
+  &__descr {
+    font-size: 26px;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+    color: #304ffe;
+    margin: 0;
+  }
+}
