@@ -42,13 +42,12 @@
 
       <div class="first-screen__sup-video">
         <h1 class="first-screen__main-msg">C вас<br>картинки<br>с&nbsp;нас картины</h1>
-        <p class="first-screen__sub-main-msg">за 1 день делаем фотокартину на холсте<br>и оперативно доставляем вам</p>
+        <p class="first-screen__sub-main-msg">за 1 день делаем картину на холсте<br>и оперативно доставляем вам</p>
       </div>
 
       <div class="first-screen__video">
-        <video autoplay poster="video/main-teaser.jpg" id="bgvidcalc" loop>
-          <source src="video/main-teaser.webm" type="video/webm">
-          <source src="video/main-teaser.mp4" type="video/mp4">
+        <video autoplay poster="img/wow.jpg" loop>
+          <source src="video/wow.mp4" type="video/mp4">
         </video>
       </div>
 
@@ -73,7 +72,7 @@
       </div>
 
       <form class="quickly">
-        <h2 class="quickly__title">Оставьте заявку и получите <br>макет будущей фотокартины <br>уже сегодня</h2>
+        <h2 class="quickly__title">Оставьте заявку и получите <br>макет будущей картины <br>уже сегодня</h2>
         <label class="field-text">
           <div class="field-text__name">Чтобы согласовать с вами макет</div>
           <div class="field-text__input-wrap">
@@ -86,7 +85,12 @@
             <input type="tel" class="field-text__input" placeholder="Введите номер телефона">
           </div>
         </label>
-        <button class="btn  btn--secondary">загрузить фото<br>и получить секретное предложение</button>
+        <div class="field-file">
+          <label class="field-file__input-wrap">
+            <input class="field-file__input" type="file">
+            <div class="field-file__name-text  btn  btn--secondary">загрузить<br>изображение<br>и получить секретное предложение</div>
+          </label>
+        </div>
         <p class="quickly__descr">Заполнение заявки вас ни к чему не обязывает. <br>Мы свяжемся с вами обсудить все детали.</p>
       </form>
 
@@ -176,10 +180,35 @@
   </div>
 
   <div class="request">
-    <a href="" class="btn btn--request">оставите заявку сейчас<br>и получите секретное предложение</a>
+    <a href="#offer-form" id="show-offer-form" class="btn btn--request">оставите заявку сейчас<br>и получите секретное предложение</a>
     <div class="request__descr">
       Заполнение заявки вас ни к чему не обязывает. <br>Мы свяжемся с вами обсудить все детали.
     </div>
+
+    <div id="offer-form" class="offer-form">
+      <form class="offer-form__form">
+        <label class="field-text">
+          <div class="field-text__name">Куда отправить предложение</div>
+          <div class="field-text__input-wrap">
+            <input type="email" class="field-text__input" placeholder="Введите Ваш e-mail">
+          </div>
+        </label>
+        <label class="field-text">
+          <div class="field-text__name">Для оперативной связи с Вами</div>
+          <div class="field-text__input-wrap">
+            <input type="tel" class="field-text__input" placeholder="Введите номер телефона">
+          </div>
+        </label>
+        <div class="field-file">
+          <label class="field-file__input-wrap">
+            <input class="field-file__input" type="file">
+            <div class="field-file__name-text  btn  btn--green">загрузить<br>изображение</div>
+          </label>
+        </div>
+        <button class="btn  btn--blue">получить секретное предложение</button>
+      </form>
+    </div>
+
   </div>
 
   <section class="very-simple">
@@ -359,11 +388,11 @@
 
   <div class="social">
     <ul class="social__list">
-      <li class="social__item"><a href="" class="social__link   social__link--vk">Вконтакте</a></li>
-      <li class="social__item"><a href="" class="social__link   social__link--fb">Facebook</a></li>
-      <li class="social__item"><a href="" class="social__link   social__link--tw">twittwr</a></li>
+      <li class="social__item"><a href="" class="social__link   social__link--in"><img src="img/social-01.svg" alt=""></a></li>
+      <li class="social__item"><a href="" class="social__link   social__link--fb"><img src="img/social-02.svg" alt=""></a></li>
+      <li class="social__item"><a href="" class="social__link   social__link--vk"><img src="img/social-03.svg" alt=""></a></li>
     </ul>
-    <p class="social__descr">нашим подписчикам скидка 10% <br>присоединяйтесь сейчас</p>
+    <p class="social__descr">Дарим 300 рублей за подписку! <br>Присоединяйтесь сейчас!</p>
   </div>
 
   <div class="queen-size" id="sizes">
@@ -385,7 +414,7 @@
     </p>
     <p class="queen-size__item  queen-size__item--50-75">
       <span class="queen-size__size">50 × 70 см</span>
-      <span class="queen-size__price">1110 <span class="rub">руб</span></span>
+      <span class="queen-size__price">2490 <span class="rub">руб</span></span>
       <a href="" class="queen-size__btn">хочу так</a>
     </p>
   </div>
@@ -442,8 +471,8 @@
         </div>
       </div>
     </div>
-    <!-- Добавить класс style-form--shown для анимационного появления -->
-    <form class="style-form  sofa__form" id="sofa-form">
+    <!-- Убрать класс style-form--shown для сокрытия -->
+    <form class="style-form  style-form--shown  sofa__form" id="sofa-form">
       <div class="style-form__fields-wrapper">
         <div class="style-form__fields">
           <label class="field-text  field-text--md">
@@ -458,7 +487,10 @@
               <input type="tel" class="field-text__input" placeholder="Введите номер телефона">
             </div>
           </label>
-          <button class="style-form__btn">Вперед!</button>
+          <button class="btn  btn--green">Получить<br>макет сегодня</button>
+          <p class="style-form__descr">
+            Заполнение заявки вас ни к чему не обязывает. <br>Мы свяжемся с Вами, чтобы обсдуить все детали.
+          </p>
         </div>
       </div>
     </form>
@@ -468,14 +500,16 @@
     <p class="delivery__msg">мы можем доставить картину курьером до двери <br>или заберите её из пункта самовывоза в удобное время</p>
     <div class="delivery__wrapper">
       <div class="delivery__left">
-        <video autoplay poster="video/main-teaser.jpg" id="bgvidcalc" loop>
-          <source src="video/main-teaser.webm" type="video/webm">
-          <source src="video/main-teaser.mp4" type="video/mp4">
+        <video autoplay loop>
+          <source src="video/about.webm" type="video/webm">
+          <source src="video/about.mp4" type="video/mp4">
         </video>
         <div class="delivery__left-msg">Мы — команда опытных профессионалов и единомышленников. <br>Всё, что мы делаем — делаем с любовью. <br>Благодарны Вам за доверие и выбор!</div>
       </div>
       <div class="delivery__right">
-        <div id="map" class="delivery__map">карта</div>
+        <div id="map" class="delivery__map">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=3OfJxFwAwjOyID7u3eT8bNdPRXywM0EZ&width=100%&height=300&lang=ru_RU&sourceType=constructor&scroll=true"></script>
+        </div>
       </div>
     </div>
   </div>
