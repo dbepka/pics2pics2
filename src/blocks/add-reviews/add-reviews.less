@@ -14,7 +14,7 @@
   align-items: flex-start;
   position: absolute;
   left: 50%;
-  bottom: 106px;
+  bottom: 10px;
   transform: translateX(-50%);
   z-index: -1;
   opacity: 0;
@@ -75,6 +75,7 @@
     border-radius: 0;
     text-align: left;
     background-color: #FDF05F;
+    min-height: 76px;
   }
 
   .field-text:last-child {
@@ -107,5 +108,9 @@
     &:after {
       transform: translate(-50%, -50%) rotate(45deg);
     }
+  }
+
+  .field-text {
+    margin-bottom: 16px;
   }
 }

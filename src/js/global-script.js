@@ -61,4 +61,8 @@ jQuery( document ).ready(function($) {
     $('#add-reviews').removeClass('add-reviews--shown');
   });
 
+  $('#show-offer-form').on('click', function(e){
+    e.preventDefault();
+    $('#offer-form').css('display', 'flex');
+  });
 });

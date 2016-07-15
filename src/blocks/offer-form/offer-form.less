@@ -1,0 +1,53 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/offer-form/offer-form.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.offer-form {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(183,221,235,0.95);
+  // display: flex;
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  .field-file {
+    margin-bottom: 16px;
+  }
+
+  .field-text {
+    width: 260px;
+
+    &:first-child {
+      width: 324px;
+    }
+  }
+
+  .field-text__name {
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0.075em;
+    color: #212121;
+  }
+
+  .field-text__input {
+    font-size: 12px;
+    letter-spacing: 0.075em;
+    color: #212121;
+    padding-top: 10px;
+    padding-bottom: 8px;
+
+    &::placeholder {
+      color: #212121;
+    }
+  }
+
+  .btn {
+    width: 162px;
+  }
+}
