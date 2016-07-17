@@ -20,6 +20,7 @@
   &__wrapper {
     display: flex;
     height: 340px;
+    overflow: hidden;
   }
 
   &__left {
@@ -39,6 +40,11 @@
       width: auto;
       height: auto;
       transform: translateX(-50%) translateY(-50%);
+    }
+
+    @media (max-width: (@screen-xl - 1)) {
+      width: 508px;
+      min-width: 508px;
     }
   }
 
@@ -61,7 +67,6 @@
   &__map {
     height: 340px;
     width: 100%;
-    overflow: hidden;
   }
 
 }

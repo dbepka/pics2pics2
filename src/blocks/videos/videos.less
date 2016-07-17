@@ -6,15 +6,20 @@
 .videos {
   display: flex;
   flex-wrap: wrap;
+  min-width: @screen-lg;
 
   &__item {
     width: 50%;
-    height: 25.98vw;
+    height: 25.5vw;
     min-width: 625px;
     min-height: 332px;
     position: relative;
     overflow: hidden;
     background: #fae1dc;
+
+    @media (max-width: (@screen-xl - 1)) {
+      min-width: 480px;
+    }
 
     &:before {
       content: '';

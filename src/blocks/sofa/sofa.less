@@ -8,6 +8,12 @@
   background: #D6D5D1 url(../img/sofa.jpg) 50% no-repeat;
   background-size: 1920px 1200px;
 
+  @media (max-width: (@screen-xl - 1)) {
+    height: 758px;
+    background-size: auto 1018px;
+    background-position: e("calc(50% + 58px)") 50%;
+  }
+
   & > img {
     display: none;
   }
@@ -56,6 +62,11 @@
     letter-spacing: 0.1em;
     background: url(../img/24-7-01.svg) 0 0 no-repeat;
     background-size: 127px 78px;
+
+    @media (max-width: (@screen-xl - 1)) {
+      top: 13px;
+      left: 9px;
+    }
   }
 
   &__step-1 {
@@ -85,7 +96,7 @@
 
   &__upload-btn {
     .btn();
-    min-width: 204px;
+    width: 292px;
     line-height: 36px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -129,6 +140,10 @@
     //   transform: translate(-50%, 364%);
     // }
 
+    @media (max-width: (@screen-xl - 1)) {
+      display: none;
+    }
+
     h1 {
       margin: 0;
       color: #fff;
@@ -146,6 +161,10 @@
 
   &__step-2 {
     display: none;
+
+    @media (max-width: (@screen-xl - 1)) {
+      display: block;
+    }
   }
 
   &__pict {
@@ -178,6 +197,10 @@
     top: 50%;
     left: 50%;
     transform: translate(e("calc(-50% - 438px)"), e("calc(-50% - 23vh)"));
+
+    @media (max-width: (@screen-xl - 1)) {
+      display: none;
+    }
   }
 
   &__sizes {
@@ -188,6 +211,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, 6%);
+
+    @media (max-width: (@screen-xl - 1)) {
+      top: auto;
+      bottom: 0;
+      left: 286px;
+      transform: translate(0, 0);
+    }
   }
 
   &__sizes-column {
@@ -247,6 +277,10 @@
     padding-bottom: 0;
     border-radius: 14px;
     color: #fff;
+
+    @media (max-width: (@screen-xl - 1)) {
+      display: none;
+    }
   }
 
   &__text {
@@ -258,6 +292,10 @@
 
     @media (min-width: @screen-xl) {
       transform: translate(107%, -105%);
+    }
+
+    @media (max-width: (@screen-xl - 1)) {
+      display: none;
     }
   }
 
@@ -318,11 +356,23 @@
     font-weight: 400;
     display: block;
     color: #212121;
+
+    @media (max-width: (@screen-xl - 1)) {
+      font-size: 11px;
+      line-height: 20px;
+      letter-spacing: 0.15em;
+    }
   }
 
   &__descr-text {
     color: #0044cc;
     display: block;
+
+    @media (max-width: (@screen-xl - 1)) {
+      font-size: 10px;
+      line-height: 20px;
+      letter-spacing: 0.15em;
+    }
   }
 }
 

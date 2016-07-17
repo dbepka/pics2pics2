@@ -15,8 +15,33 @@
   transform: translateY(101%);
   transition: transform 0.3s;
 
+  @media (max-width: (@screen-xl - 1)) {
+    right: auto;
+    top: 0;
+    width: 286px;
+    transform: translateX(-101%);
+
+    .field-text--md {
+      width: 260px;
+    }
+  }
+
   &--shown {
     transform: translateY(0);
+
+    @media (max-width: (@screen-xl - 1)) {
+      transform: translateX(0);
+    }
+  }
+
+  &__fields {
+
+    @media (max-width: (@screen-xl - 1)) {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 43px;
+    }
   }
 
   &__btn {
@@ -40,6 +65,11 @@
     letter-spacing: 0.135em;
     text-align: center;
     margin: 14px 0 7px;
+
+    @media (max-width: (@screen-xl - 1)) {
+      text-align: left;
+      padding: 6px 0 0 63px;
+    }
   }
 
   .field-text__name {
@@ -49,5 +79,18 @@
   .field-text__input::placeholder {
     color: #0044cc;
     font-weight: 600;
+  }
+
+  .sofa__text {
+    display: none;
+
+    @media (max-width: (@screen-xl - 1)) {
+      display: block;
+      top: 44px;
+      left: 20px;
+      transform: translate(0, 0);
+      z-index: 1;
+      text-align: left;
+    }
   }
 }

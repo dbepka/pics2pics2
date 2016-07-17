@@ -24,6 +24,8 @@
     list-style: none;
     display: flex;
     justify-content: space-around;
+    width: 100%;
+    overflow: hidden;
   }
 
   &__item {
@@ -31,7 +33,16 @@
     padding-top: 266px;
     position: relative;
 
+    @media (max-width: (@screen-xl - 1)) {
+      padding-top: 290px;
+    }
+
     &--01 {
+
+      @media (max-width: (@screen-xl - 1)) {
+        transform: translateX(10px);
+      }
+
       &:before {
         background: url(../img/very-simple-01.svg) 0 0 no-repeat;
         content: '';
@@ -40,11 +51,20 @@
         left: 0;
         width: 141px;
         height: 160px;
+
+        @media (max-width: (@screen-xl - 1)) {
+          top: 71px;
+        }
       }
     }
 
     &--02 {
       transform: translateX(5px);
+
+      @media (max-width: (@screen-xl - 1)) {
+        transform: translateX(7px);
+        width: 200px;
+      }
 
       &:before {
         background: url(../img/very-simple-02.svg) 0 0 no-repeat;
@@ -54,11 +74,20 @@
         left: 0;
         width: 138px;
         height: 117px;
+
+        @media (max-width: (@screen-xl - 1)) {
+          top: 115px;
+        }
       }
     }
 
     &--03 {
       transform: translateX(15px);
+
+      @media (max-width: (@screen-xl - 1)) {
+        transform: translateX(-7px);
+        width: 200px;
+      }
 
       &:before {
         background: url(../img/very-simple-03.svg) 0 0 no-repeat;
@@ -68,11 +97,20 @@
         left: 0;
         width: 175px;
         height: 165px;
+
+        @media (max-width: (@screen-xl - 1)) {
+          top: 87px;
+        }
       }
     }
 
     &--04 {
       transform: translateX(13px);
+
+      @media (max-width: (@screen-xl - 1)) {
+        transform: translateX(13px);
+        width: 200px;
+      }
 
       &:before {
         background: url(../img/very-simple-04.svg) 0 0 no-repeat;
@@ -82,6 +120,10 @@
         left: -16px;
         width: 156px;
         height: 131px;
+
+        @media (max-width: (@screen-xl - 1)) {
+          top: 120px;
+        }
       }
     }
 
