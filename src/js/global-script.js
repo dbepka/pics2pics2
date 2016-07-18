@@ -8,11 +8,6 @@ jQuery( document ).ready(function($) {
     items: 2
   });
 
-  $('#show-gallery-hidden-msg').on('click', function(e){
-    e.preventDefault();
-    $('#gallery-hidden-msg').slideToggle();
-  });
-
   $('.videos__item:has(video)')
     .on('mouseenter', function(){
       $(this).find('video').get(0).play();
