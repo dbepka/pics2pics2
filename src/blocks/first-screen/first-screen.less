@@ -9,14 +9,13 @@
 
   &__top {
     width: 100%;
-    // min-height: 600px;
     position: relative;
 
     &:after {
       content: '';
       position: absolute;
       z-index: 1;
-      top: 0;
+      top: 50%;
       bottom: 0;
       left: 0;
       right: 0;
@@ -35,6 +34,20 @@
       display: block;
       width: 100%;
       height: auto;
+    }
+
+    @media (max-width: 1365px) {
+      height: 570px;
+
+      video {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        height: auto;
+      }
     }
   }
 
