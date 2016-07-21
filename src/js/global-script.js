@@ -81,7 +81,7 @@ jQuery( document ).ready(function($) {
 
   //tooltip
   var tooltip = $('#tooltip');
-  $('.gallery__msg a').hover(function() {
+  $('.tooltip-wrap').hover(function() {
     tooltip.animate({left: 0}, {queue: false, duration: 500});
   }, function() {
     tooltip.animate({left: -500}, {queue: false, duration: 500});

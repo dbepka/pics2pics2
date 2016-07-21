@@ -112,6 +112,7 @@
 
     &:hover, &:focus {
       box-shadow: 0 4px 0 #051945;
+      opacity: .9;
     }
   }
 
@@ -131,7 +132,7 @@
 
   &__help {
     position: absolute;
-    bottom: 28px;
+    bottom: 1vw;
     left: 50%;
     transform: translate(-50%, 0);
     transition: all 0.3s;
@@ -141,14 +142,15 @@
     // }
 
     @media (max-width: (@screen-xl - 1)) {
-      display: none;
+      // display: none;
+      bottom: 5vw;
     }
 
     h1 {
       margin: 0;
       color: #fff;
       font-size: 36px;
-      line-height: 62px;
+      line-height: 42px;
       letter-spacing: 0.16em;
       text-transform: uppercase;
       text-align: center;
