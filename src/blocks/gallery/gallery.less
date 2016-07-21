@@ -15,6 +15,7 @@
   }
 
   &__msg {
+    position: relative;
     font-size: 26px;
     line-height: 71px;
     letter-spacing: 0.12em;
@@ -91,3 +92,49 @@
     background: url(../img/icon-arr-right--hover.svg) center no-repeat;
   }
 }
+
+.tooltip {
+  position: absolute;
+  top: 0;
+  left: -500px;
+  overflow: hidden;
+  line-height: 100%;
+
+
+  &__text {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+    min-height: 100%;
+    padding: 0 60px;
+  }
+
+  h3 {
+    font-size: 26px;
+    line-height: @line-height;
+    text-transform: uppercase;
+    color: #fff5ff;
+    letter-spacing: 0.22em;
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: @line-height;
+    letter-spacing: 0.22em;
+    color: #0044cc;
+    margin: 0;
+    text-transform: none;
+    color: white;
+    font-weight: 400;
+  }
+}
+
+
+
+

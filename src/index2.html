@@ -99,7 +99,7 @@
 
   <div class="gallery">
 
-    <div class="gallery__carousel  owl-carousel">
+    <!-- <div class="gallery__carousel  owl-carousel">
       <div><img src="img/TEMP_carousel_01.jpg" alt=""></div>
       <div><img src="img/TEMP_carousel_02-1.jpg" alt=""></div>
       <div><img src="img/TEMP_carousel_03.jpg" alt=""></div>
@@ -109,12 +109,34 @@
       <div><img src="img/TEMP_carousel_01.jpg" alt=""></div>
       <div><img src="img/TEMP_carousel_02.jpg" alt=""></div>
       <div><img src="img/TEMP_carousel_03.jpg" alt=""></div>
+    </div> -->
+    <div class="gallery__carousel  owl-carousel">
+      <div><img src="img/canvas_photo_1.jpg" alt=""></div>
+      <div><img src="img/canvas_photo_2.jpg" alt=""></div>
+      <div><img src="img/canvas_photo_3.jpg" alt=""></div>
+      <div><img src="img/canvas_photo_4.jpg" alt=""></div>
+      <div><img src="img/canvas_photo_5.jpg" alt=""></div>
+      <div><img src="img/canvas_photo_6.jpg" alt=""></div>
+      <div><img src="img/canvas_photo_7.jpg" alt=""></div>
+      <div><img src="img/canvas_photo_8.jpg" alt=""></div>
+      <div><img src="img/canvas_photo_9.jpg" alt=""></div>
+      <div><img src="img/canvas_photo_10.jpg" alt=""></div>
     </div>
 
     <div class="gallery__msg">
       больше размер — больше эмоций<br>
       холст сохранит <a href="">яркость красок</a>, а не отпечатки ваших пальцев<br>
       украсит вашу комнату, а не альбом
+      <div class="tooltip" id="tooltip">
+        <video autoplay loop>
+          <source src="video/color.webm" type="video/webm">
+          <source src="video/color.mp4" type="video/mp4">
+        </video>
+        <div class="tooltip__text">
+          <h3 class="tooltip__text-header">Залог красоты </br> и долголетия</h3>
+          <p class="tooltip__text-description">12-красочная печать чернилами LUCIA EX сохранит яркость, насыщенность и глубину цвета до 95 лет.</p>
+        </div>
+      </div>
     </div>
 
     <div id="gallery-hidden-msg" class="gallery__hidden-msg">
@@ -158,7 +180,7 @@
   </div>
 
   <div class="request">
-    <a href="#offer-form" id="show-offer-form" class="btn btn--request">оставите заявку сейчас<br>и получите секретное предложение</a>
+    <a href="#offer-form" class="popup_link btn btn--request">оставите заявку сейчас<br>и получите секретное предложение</a>
     <div class="request__descr">
       Заполнение заявки вас ни к чему не обязывает. <br>Мы свяжемся с вами обсудить все детали.
     </div>
@@ -177,13 +199,16 @@
             <input type="tel" class="field-text__input" placeholder="Введите номер телефона">
           </div>
         </label>
-        <div class="field-file">
-          <label class="field-file__input-wrap">
-            <input class="field-file__input" type="file">
-            <div class="field-file__name-text  btn  btn--green">загрузить<br>изображение</div>
-          </label>
+        <div class="offer-form__wrap-btn">
+          <div class="field-file">
+            <label class="field-file__input-wrap">
+              <input class="field-file__input" type="file">
+              <div class="field-file__name-text  btn  btn--white">загрузить<br>изображение</div>
+            </label>
+          </div>
+          <button class="btn  btn--green">получить секретное предложение</button>
         </div>
-        <button class="btn  btn--blue">получить секретное предложение</button>
+        <div class="offer-form__close"></div>
       </form>
     </div>
 
@@ -378,22 +403,22 @@
     <p class="queen-size__item  queen-size__item--30-30">
       <span class="queen-size__size">30 × 30 см</span>
       <span class="queen-size__price">1110 <span class="rub">руб</span></span>
-      <a href="" class="queen-size__btn">хочу так</a>
+      <a href="#offer-form" class="queen-size__btn popup_link">хочу так</a>
     </p>
     <p class="queen-size__item  queen-size__item--60-60">
       <span class="queen-size__size">60 × 60 см</span>
       <span class="queen-size__price  queen-size__price--blue">2440 <span class="rub">руб</span></span>
-      <a href="" class="queen-size__btn">хочу так</a>
+      <a href="#offer-form" class="queen-size__btn popup_link">хочу так</a>
     </p>
     <p class="queen-size__item  queen-size__item--80-120">
       <span class="queen-size__size">80 × 120 см</span>
       <span class="queen-size__price  queen-size__price--blue">5280 <span class="rub">руб</span></span>
-      <a href="" class="queen-size__btn">хочу так</a>
+      <a href="#offer-form" class="queen-size__btn popup_link">хочу так</a>
     </p>
     <p class="queen-size__item  queen-size__item--50-75">
       <span class="queen-size__size">50 × 70 см</span>
       <span class="queen-size__price">2490 <span class="rub">руб</span></span>
-      <a href="" class="queen-size__btn">хочу так</a>
+      <a href="#offer-form" class="queen-size__btn popup_link">хочу так</a>
     </p>
   </div>
 

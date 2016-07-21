@@ -15,17 +15,46 @@
   display: none;
   justify-content: center;
   align-items: center;
+  margin: 15vh;
 
+  &__close {
+    width: 20px;
+    height: 20px;
+    background-color: #6FCFB8;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 25px;
+      height: 2px;
+      background-color: #fff;
+    }
+    &:before {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+    &:after {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+  }
+
+    &__wrap-btn {
+      display: flex;
+    }
+  
   .field-file {
     margin-bottom: 16px;
   }
 
   .field-text {
-    width: 260px;
-
-    &:first-child {
-      width: 324px;
-    }
+    width: 324px;
   }
 
   .field-text__name {

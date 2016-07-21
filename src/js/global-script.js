@@ -56,8 +56,23 @@ jQuery( document ).ready(function($) {
     $('#add-reviews').removeClass('add-reviews--shown');
   });
 
-  $('#show-offer-form').on('click', function(e){
+  // $('.show-offer-form').on('click', function(e){
+  //   e.preventDefault();
+  //   $('#offer-form').css('display', 'flex');
+  // });
+  $('.popup_link').on('click', function(e){
     e.preventDefault();
-    $('#offer-form').css('display', 'flex');
+    $($(this).attr('href')).css('display', 'flex');
+  });
+  $('.offer-form__close').on('click', function(){
+    $('#offer-form').css('display', 'none');
+  });
+
+  //tooltip
+  var tooltip = $('#tooltip');
+  $('.gallery__msg a').hover(function() {
+    tooltip.animate({left: 0}, {queue: false, duration:500});
+  }, function() {
+    tooltip.animate({left: -500}, {queue: false, duration:500});
   });
 });
