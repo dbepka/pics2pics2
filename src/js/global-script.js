@@ -68,11 +68,22 @@ jQuery( document ).ready(function($) {
     $('#offer-form').css('display', 'none');
   });
 
+  //tooltip-form
+  var form = $('#field-file__input');
+  form.change(function(){
+    if ($(window).width() >= 1280) {
+      $('.style-form').animate({bottom: 0}, 500);
+    } else {
+      $('.style-form').animate({left: 0}, 500);
+      $('#supsofa-sizes').css('display', 'flex');
+    }
+  });
+
   //tooltip
   var tooltip = $('#tooltip');
   $('.gallery__msg a').hover(function() {
-    tooltip.animate({left: 0}, {queue: false, duration:500});
+    tooltip.animate({left: 0}, {queue: false, duration: 500});
   }, function() {
-    tooltip.animate({left: -500}, {queue: false, duration:500});
+    tooltip.animate({left: -500}, {queue: false, duration: 500});
   });
 });
