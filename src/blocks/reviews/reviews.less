@@ -13,9 +13,10 @@
     display: flex;
     line-height: 125%;
     position: relative;
+    min-height: 150px;
 
     &:not(:last-child) {
-      margin-bottom: 74px;
+      margin-bottom: 84px;
     }
   }
 
@@ -69,18 +70,18 @@
 
   &__item-text {
     flex-grow: 1;
-    padding: 38px 0 10px 39px;
+    padding: 28px 0 10px 39px;
     font-size: 18px;
     line-height: 25px;
     color: #0044cc;
     text-transform: none;
     letter-spacing: 0.1em;
 
-    // Защита высоты от переполнения
-    // .owl-carousel--reviews & {
-    //   max-height: 127px;
-    //   overflow: hidden;
-    // }
+    //Защита высоты от переполнения
+    .owl-carousel--reviews & {
+      max-height: 150px;
+      overflow: hidden;
+    }
   }
 
 }
