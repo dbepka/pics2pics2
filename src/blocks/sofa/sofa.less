@@ -4,7 +4,7 @@
 .sofa {
   position: relative;
   overflow: hidden;
-  height: 100vh;
+  height: 125vh;
   background: #D6D5D1 url(../img/sofa.jpg) 50% no-repeat;
   background-size: 1920px 1200px;
 
@@ -46,7 +46,7 @@
     }
   }
 
-  &__take-orders {
+  &__take-orders { 
     position: absolute;
     top: 33px;
     left: 32px;
@@ -75,7 +75,7 @@
 
   &__upload {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -112%);
     width: 455px;
@@ -83,6 +83,10 @@
     border: 3px solid #F5F5F5;
     display: flex;
     align-items: center;
+
+    @media (max-width: (@screen-xl - 1)) {
+      top: 50%;
+    }
 
     .field-file {
       margin: 0 auto;
@@ -132,7 +136,7 @@
 
   &__help {
     position: absolute;
-    bottom: 3vw;
+    bottom: 5vw;
     left: 50%;
     transform: translate(-50%, 0);
     transition: all 0.3s;
@@ -162,7 +166,10 @@
 
 
   &__step-2 {
+
     display: none;
+    // display: block;
+
 
     @media (max-width: (@screen-xl - 1)) {
       display: block;
@@ -172,7 +179,7 @@
   &__pict {
     position: absolute;
     overflow: hidden;
-    top: 50%;
+    top: 40%;
     left: 50%;
     font-size: 0;
     transform: translate(-50%, e("calc(-50% - 18vh)"));
@@ -180,6 +187,10 @@
     background-position: center;
     background-size: cover;
     box-shadow: -3px 3px 3px rgba(0,0,0,0.69);
+
+    @media (max-width: (@screen-xl - 1)) {
+      top: 50%;
+    }
   }
 
   &__change-pict {
@@ -196,21 +207,25 @@
     text-transform: uppercase;
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(e("calc(-50% - 438px)"), e("calc(-50% - 23vh)"));
 
     @media (max-width: (@screen-xl - 1)) {
       display: none;
+      top: 50%;
     }
   }
 
   &__sizes {
+
     display: none;
+    // display: flex;
+
     justify-content: center;
     align-items: flex-end;
     position: absolute;
-    top: 50%;
+    top: 44%;
     left: 50%;
     transform: translate(-50%, 6%);
 
@@ -225,16 +240,16 @@
   &__sizes-column {
     margin-right: 2px;
 
-    // .sofa__sizes-item {
-    //   transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    // }
+    .sofa__sizes-item {
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    }
 
-    // &--visible {
-    //   .sofa__sizes-item {
-    //     backface-visibility: visible !important;
-    //     transform: perspective(400px);
-    //   }
-    // }
+    &--visible {
+      .sofa__sizes-item {
+        backface-visibility: visible !important;
+        transform: perspective(400px);
+      }
+    }
   }
 
   &__sizes-item {
@@ -248,7 +263,7 @@
     letter-spacing: 0.29em;
     color: #3d5afe;
     text-transform: uppercase;
-    // transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
     box-shadow: 0 5px 5px rgba(0,0,0,0.16);
     animation: size-show 0.3s ease-out 0s 1;
 
@@ -262,7 +277,7 @@
   &__more-sizes {
     .btn();
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-345px, -50%);
     padding-right: 4px;
@@ -288,7 +303,7 @@
   &__text {
     position: absolute;
     width: 300px;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(50%, -105%);
 
