@@ -138,6 +138,34 @@
     text-align: center;
     margin: 0;
   }
+  
+  &__upload-tooltip {
+    position: absolute;
+    background-color: #fff;
+    color: #888888;
+    top: 150px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 18px;
+
+    &:after {
+      display: block;
+      position: absolute;
+      top: -18px;
+      left: 61px;
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 0px solid transparent;
+      border-right: 32px solid white;
+      border-bottom: 25px solid transparent;
+      transform: rotate(119deg);
+    }
+  }
+
 
   &__help {
     position: absolute;
