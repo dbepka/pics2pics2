@@ -4,16 +4,21 @@
 .sofa {
   position: relative;
   overflow: hidden;
-  height: 125vh;
+  height: 100vh;
   background: #D6D5D1 url(../img/sofa.jpg) 50% no-repeat;
-  // background-size: 1920px 1200px;
-  background-size: cover;
+  background-size: 1920px 1200px;
+  // background-size: cover;
 
   @media (max-width: (@screen-xl - 1)) {
     height: 758px;
     background-size: auto 1018px;
     background-position: e("calc(50% + 58px)") 50%;
   }
+  @media (max-height: 900px) {
+  height: 125vh;
+  background-size: auto 1018px;
+  background-position: e("calc(50% + 58px)") 50%;
+}
 
   & > img {
     display: none;
@@ -115,7 +120,7 @@
     box-shadow: 0 4px 0 #051945;
     color: #fff;
 
-    &:hover, &:focus {
+    &:hover, &:focus, &:active {
       box-shadow: 0 4px 0 #051945;
       opacity: .9;
     }
@@ -137,7 +142,7 @@
 
   &__help {
     position: absolute;
-    bottom: 5vw;
+    bottom: 1vw;
     left: 50%;
     transform: translate(-50%, 0);
     transition: all 0.3s;
