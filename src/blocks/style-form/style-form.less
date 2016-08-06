@@ -25,6 +25,7 @@
 
     .field-text--md {
       width: 260px;
+      margin-bottom: 0;
     }
   }
 
@@ -50,12 +51,13 @@
   // }
 
   &__fields {
-    height: 0;
-    padding-bottom: 23.12%;
+    // height: 0;
+    // padding-bottom: 23.12%;
 
-    @media (min-width: 1281px) {
-      padding-bottom: 22.6%;
-    }
+    // @media (min-width: 1281px) {
+    //   padding-bottom: 22.6%;
+    // }
+    padding-top: 15px;
 
     @media (max-width: (@screen-xl - 1)) {
       position: absolute;
@@ -94,12 +96,8 @@
   }
 
   .field-text__name {
-    padding-top: 15px;
     color: #212121;
 
-    &:last-child {
-      padding-top: 0;
-    }
   }
 
   .field-text__input::placeholder {

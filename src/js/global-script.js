@@ -69,15 +69,32 @@ jQuery( document ).ready(function($) {
   });
 
   //tooltip-form
-  var form = $('#field-file__input');
-  form.change(function(){
-    if ($(window).width() >= 1280) {
-      $('.style-form').animate({bottom: 0}, 500);
-    } else {
-      $('.style-form').animate({left: 0}, 500);
-      $('#supsofa-sizes').css('display', 'flex');
+
+  function stickyForm() {
+    var sofa = $('#sofa'),
+      sizes = $('#supsofa-sizes'),
+      sofa_offset_bottom = parseInt(sofa.height() - parseFloat(sizes.css('top')) - sizes.height() - 4);
+    $('.style-form').css('height', sofa_offset_bottom);
+  }
+
+  $(window).resize(function() {
+    if ($('.style-form').is(':visible') && $(window).width() >= 1280) {
+      stickyForm();
     }
   });
+
+  //////////
+
+  var form = $('#field-file__input');
+    form.change(function(){
+        if ($(window).width() >= 1280) {
+          stickyForm();
+            $('.style-form').animate({bottom: 0}, 500);
+        } else {
+            $('.style-form').animate({left: 0}, 500);
+            $('#supsofa-sizes').css('display', 'flex');
+        }
+    });
 
   //tooltip
   var tooltip = $('#tooltip');
