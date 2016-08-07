@@ -73,12 +73,18 @@ jQuery( document ).ready(function($) {
   function stickyForm() {
     var sofa = $('#sofa'),
       sizes = $('#supsofa-sizes'),
-      sofa_offset_bottom = parseInt(sofa.height() - parseFloat(sizes.css('top')) - sizes.height() - 4);
+      sofa_offset_bottom;
+      if ($(window).width() > 1280) {
+        sofa_offset_bottom = parseInt(sofa.height() - parseFloat(sizes.css('top')) - sizes.height() - 3);
+      } else {
+        sofa_offset_bottom = parseInt(sofa.height() - parseFloat(sizes.css('top')) - sizes.height() - 4);
+      }
+      
     $('.style-form').css('height', sofa_offset_bottom);
   }
 
   $(window).resize(function() {
-    if ($('.style-form').is(':visible')) {
+    if ($('.style-form').is(':visible'))  {
       stickyForm();
     }
   });

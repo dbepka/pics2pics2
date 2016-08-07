@@ -9,7 +9,7 @@
 .sofa {
   position: relative;
   overflow: hidden;
-  height: 100vh;
+  height: 90vh;
   background: #D6D5D1 url(../img/sofa.jpg) 50% no-repeat;
   background-size: 1920px 1200px;
 
@@ -449,11 +449,13 @@
   }
 
   &__descr-text {
+    // display: block;
+    display: none;
     letter-spacing: 0.19em;
     font-size: 14px;
     line-height: 23px;
     color: #3d5afe;
-    display: block;
+
 
     @media (max-width: (@screen-xl - 1)) {
       font-size: 10px;
