@@ -44,8 +44,10 @@
   }
 
     &__wrap-btn {
-      display: flex;
-      margin-top: 35px;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
+      // margin-top: -10px;
     }
   
   .field-file {
@@ -83,3 +85,43 @@
     width: 154px;
   }
 }
+
+.attach-plugin {
+  list-style: none;
+  margin: 0;
+  padding: 15px 0 0;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  font-size: 12px;
+  
+  &__item {
+    position: relative;
+    &:after {
+      content: '\2716';
+      position: absolute;
+      right: 30%;
+      top: 0%;
+      width: 12px;
+      height: 12px;
+      color: #fff;
+    }
+  }
+
+}
+
+.popup_link {
+
+  &--uppercase {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 140%;
+    padding: 30px;
+    letter-spacing: 0.158em;
+  }
+}
+
+
+
+
+
+

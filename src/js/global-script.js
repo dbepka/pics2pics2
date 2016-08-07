@@ -78,7 +78,7 @@ jQuery( document ).ready(function($) {
   }
 
   $(window).resize(function() {
-    if ($('.style-form').is(':visible') && $(window).width() >= 1280) {
+    if ($('.style-form').is(':visible')) {
       stickyForm();
     }
   });
@@ -87,13 +87,13 @@ jQuery( document ).ready(function($) {
 
   var form = $('#field-file__input');
     form.change(function(){
-        if ($(window).width() >= 1280) {
+        // if ($(window).width() >= 1280) {
           stickyForm();
             $('.style-form').animate({bottom: 0}, 500);
-        } else {
-            $('.style-form').animate({left: 0}, 500);
+        // } else {
+            // $('.style-form').animate({left: 0}, 500);
             $('#supsofa-sizes').css('display', 'flex');
-        }
+        // }
     });
 
   //tooltip

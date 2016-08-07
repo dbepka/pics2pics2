@@ -10,15 +10,17 @@
 
 <body>
 
-<div class="main" id="main">
+<div class="main  main--v2" id="main">
+
+
 
   <section class="first-screen">
 
     <div class="first-screen__top">
 
       <div class="first-screen__sup-video">
-        <h1 class="first-screen__main-msg">C вас<br>картинки<br>с&nbsp;нас картины</h1>
-        <p class="first-screen__sub-main-msg">за 1 день делаем картину на холсте<br>и оперативно доставляем вам</p>
+        <h1 class="first-screen__main-msg">Печать на холсте<br>музейного<br>качества</h1>
+        <p class="first-screen__sub-main-msg">успейте заказать по летним ценам<br>от 1110 рублей!</p>
       </div>
 
       <div class="first-screen__video">
@@ -39,17 +41,8 @@
         <p class="first-screen__phone-descr">Бесплатный звонок по РФ</p>
       </div>
 
-      <div class="first-screen__panda-msg">
-        <span class="first-screen__panda-delir-1">Яркие</span>
-        <span class="first-screen__panda-delir-2">и качественные</span>
-        <span class="first-screen__panda-delir-3">картины</span>
-        <span class="first-screen__panda-delir-4">на холсте</span>
-        <br>
-        (можно получить уже завтра)
-      </div>
-
       <form class="quickly">
-        <h2 class="quickly__title">Оставьте заявку и получите <br>макет будущей картины <br>уже сегодня</h2>
+        <h2 class="quickly__title">Заполните форму и получите <br> макет будущей картины <br> уже сегодня</h2>
         <label class="field-text">
           <div class="field-text__name">Чтобы согласовать с вами макет</div>
           <div class="field-text__input-wrap">
@@ -65,7 +58,7 @@
         <div class="field-file">
           <label class="field-file__input-wrap">
             <input class="field-file__input" type="file">
-            <div class="field-file__name-text  btn  btn--secondary">загрузить<br>изображение<br>и получить секретное предложение</div>
+            <div class="field-file__name-text  btn  btn--secondary">загрузить <br> изображение <br> и получить макет <br>сегодня</div>
           </label>
         </div>
         <p class="quickly__descr">Заполнение заявки вас ни к чему не обязывает. <br>Мы свяжемся с вами обсудить все детали.</p>
@@ -87,22 +80,23 @@
         </div>
       </div>
 
-      <div class="first-screen__large-msg">Cделаем <br>ваши фотографии <br>или любимую картину особенными</div></div>
+      <div class="first-screen__large-msg">Cделаем <br>ваши фотографии <br>особенными</div></div>
 
   </section>
 
   <div class="gallery">
+
     <div class="gallery__carousel  owl-carousel">
-      <div><img src="img/canvas_1.jpg" alt=""></div>
-      <div><img src="img/canvas_2.jpg" alt=""></div>
-      <div><img src="img/canvas_3.jpg" alt=""></div>
-      <div><img src="img/canvas_4.jpg" alt=""></div>
-      <div><img src="img/canvas_5.jpg" alt=""></div>
-      <div><img src="img/canvas_6.jpg" alt=""></div>
-      <div><img src="img/canvas_7.jpg" alt=""></div>
-      <div><img src="img/canvas_8.jpg" alt=""></div>
-      <div><img src="img/canvas_9.jpg" alt=""></div>
-      <div><img src="img/canvas_10.jpg" alt=""></div>
+      <div><img src="img/canvas_photo_1.jpg" alt=""></div>
+      <div><img src="img/canvas_photo_2.jpg" alt=""></div>
+      <div><img src="img/canvas_photo_3.jpg" alt=""></div>
+      <div><img src="img/canvas_photo_4.jpg" alt=""></div>
+      <div><img src="img/canvas_photo_5.jpg" alt=""></div>
+      <div><img src="img/canvas_photo_6.jpg" alt=""></div>
+      <div><img src="img/canvas_photo_7.jpg" alt=""></div>
+      <div><img src="img/canvas_photo_8.jpg" alt=""></div>
+      <div><img src="img/canvas_photo_9.jpg" alt=""></div>
+      <div><img src="img/canvas_photo_10.jpg" alt=""></div>
     </div>
 
     <div class="gallery__msg">
@@ -123,17 +117,23 @@
       </div>, а не отпечатки ваших пальцев<br>
       украсит вашу комнату, а не альбом
     </div>
+
+
+    <div id="gallery-hidden-msg" class="gallery__hidden-msg">
+      <div class="gallery__hidden-msg-text">Бесплатно исправим типичные недостатки любительских фотографий</div>
+    </div>
+
   </div>
 
   <div class="videos">
-    <div class="videos__item  videos__item--empty"></div>
+    <div class="videos__item  videos__item--empty">
+      <h2 class="videos__text-title">Посмотрите, как сделаны наши картины</h2>
+    </div>
     <div class="videos__item">
-      <div class="videos__item-wrap">
-        <video id="vid-2" loop>
-          <source src="video/eco.webm" type="video/webm">
-          <source src="video/eco.mp4" type="video/mp4">
-        </video>
-      </div>
+      <video id="vid-2" loop>
+        <source src="video/eco.webm" type="video/webm">
+        <source src="video/eco.mp4" type="video/mp4">
+      </video>
       <div class="videos__text">
         <h3 class="videos__text-header">Только натуральные материалы</h3>
         <p class="videos__text-description">хлопковый холст, сосновый подрамник, <br>крафтовый скотч, эко чернила</p>
@@ -141,12 +141,10 @@
       </div>
     </div>
     <div class="videos__item">
-      <div class="videos__item-wrap">
-        <video id="vid-3" loop>
-          <source src="video/hquality.webm" type="video/webm">
-          <source src="video/hquality.mp4" type="video/mp4">
-        </video>
-      </div>
+      <video id="vid-3" loop>
+        <source src="video/hquality.webm" type="video/webm">
+        <source src="video/hquality.mp4" type="video/mp4">
+      </video>
       <div class="videos__text">
         <h3 class="videos__text-header">Безупречное качество отделки</h3>
         <p class="videos__text-description">для нас нет второстепенных деталей, <br>наша аккуратность радует глаз</p>
@@ -154,12 +152,10 @@
       </div>
     </div>
     <div class="videos__item">
-      <div class="videos__item-wrap">
-        <video id="vid-4" loop>
-          <source src="video/kreplenie.webm" type="video/webm">
-          <source src="video/kreplenie.mp4" type="video/mp4">
-        </video>
-      </div>
+      <video id="vid-4" loop>
+        <source src="video/kreplenie.webm" type="video/webm">
+        <source src="video/kreplenie.mp4" type="video/mp4">
+      </video>
       <div class="videos__text">
         <h3 class="videos__text-header">Красивый и простой крепеж</h3>
         <p class="videos__text-description">в комплекте будет все, <br>чтобы легко повесить картину</p>
@@ -169,7 +165,7 @@
   </div>
 
   <div class="request">
-    <a href="#offer-form" class="popup_link btn btn--request">Оставите заявку сейчас<br>и получите секретное предложение</a>
+    <a href="#offer-form" class="popup_link popup_link--uppercase btn btn--request">Оставить <br> заявку сейчас</a>
     <div class="request__descr">
       Заполнение заявки вас ни к чему не обязывает. <br>Мы свяжемся с вами обсудить все детали.
     </div>
@@ -195,7 +191,7 @@
               <div class="field-file__name-text  btn  btn--white">загрузить<br>изображение</div>
             </label>
           </div>
-          <button class="btn  btn--green">получить макет сегодня</button>
+          <button class="btn  btn--green">Получить макет сегодня</button>
         </div>
         <ul class="attach-plugin">
           <li class="attach-plugin__item"><span>abcdef.jpeg</span></li>
@@ -205,6 +201,7 @@
         <div class="offer-form__close"></div>
       </form>
     </div>
+
   </div>
 
   <section class="very-simple">
@@ -396,22 +393,22 @@
   <div class="queen-size" id="sizes">
     <span class="queen-size__title">Хочешь также?</span>
     <p class="queen-size__item  queen-size__item--30-30">
-      <span class="queen-size__size">30 X 30 см</span>
+      <span class="queen-size__size">30 × 30 см</span>
       <span class="queen-size__price">1110 <span class="rub">руб</span></span>
       <a href="#offer-form" class="queen-size__btn popup_link">хочу так</a>
     </p>
     <p class="queen-size__item  queen-size__item--60-60">
-      <span class="queen-size__size">60 X 60 см</span>
+      <span class="queen-size__size">60 × 60 см</span>
       <span class="queen-size__price  queen-size__price--blue">2440 <span class="rub">руб</span></span>
       <a href="#offer-form" class="queen-size__btn popup_link">хочу так</a>
     </p>
     <p class="queen-size__item  queen-size__item--80-120">
-      <span class="queen-size__size">80 X 120 см</span>
+      <span class="queen-size__size">80 × 120 см</span>
       <span class="queen-size__price  queen-size__price--blue">5280 <span class="rub">руб</span></span>
       <a href="#offer-form" class="queen-size__btn popup_link">хочу так</a>
     </p>
     <p class="queen-size__item  queen-size__item--50-75">
-      <span class="queen-size__size">50 X 70 см</span>
+      <span class="queen-size__size">50 × 70 см</span>
       <span class="queen-size__price">2490 <span class="rub">руб</span></span>
       <a href="#offer-form" class="queen-size__btn popup_link">хочу так</a>
     </p>
@@ -432,8 +429,6 @@
             <div class="field-file__name-text btn btn--blue sofa__upload-btn" data-title="hello">Загрузите изображение</div>
           </label>
         </div>
-        <div class="sofa__upload-tooltip">Размер изображения не обязательно должен быть большой. 
-          Поиск качественных изображений мы берем на себя.</div>
       </div>
     </div>
     <div class="sofa__step-2">

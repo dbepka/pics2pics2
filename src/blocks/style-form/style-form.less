@@ -15,19 +15,19 @@
   // transform: translateY(101%);
   transition: transform 0.3s;
 
-  @media (max-width: (@screen-xl - 1)) {
-    right: auto;
-    top: 0;
-    bottom: 0;
-    left: -286px;
-    width: 286px;
-    transform: translateX(-101%);
+  // @media (max-width: (@screen-xl - 1)) {
+  //   right: auto;
+  //   top: 0;
+  //   bottom: 0;
+  //   left: -286px;
+  //   width: 286px;
+  //   transform: translateX(-101%);
 
-    .field-text--md {
-      width: 260px;
-      margin-bottom: 0;
-    }
-  }
+  //   .field-text--md {
+  //     width: 260px;
+  //     margin-bottom: 0;
+  //   }
+  // }
 
   &--shown {
     transform: translateY(0);
@@ -37,34 +37,15 @@
     }
   }
 
-  // &__blur {
-  //   -webkit-filter: blur(2px);
-  //   -moz-filter: blur(2px);
-  //   -o-filter: blur(2px);
-  //   -ms-filter: blur(2px);
-  //   filter: blur(2px);
-  //   position: absolute;
-  //   width: 100%;
-  //   height: 290px;
-  //   top: 0;
-  //   left: 0;
-  // }
-
   &__fields {
-    // height: 0;
-    // padding-bottom: 23.12%;
-
-    // @media (min-width: 1281px) {
-    //   padding-bottom: 22.6%;
-    // }
     padding-top: 15px;
 
-    @media (max-width: (@screen-xl - 1)) {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 43px;
-    }
+    // @media (max-width: (@screen-xl - 1)) {
+    //   position: absolute;
+    //   left: 0;
+    //   right: 0;
+    //   bottom: 43px;
+    // }
   }
 
   &__btn {
@@ -83,15 +64,21 @@
 
   &__descr {
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 120%;
     letter-spacing: 0.135em;
     text-align: center;
-    margin: 14px 0 7px;
+    margin: 65px 0 7px;
 
-    @media (max-width: (@screen-xl - 1)) {
+    @media (max-width: (@screen-xl)) {
+      // position: absolute;
+      // top: 50%;
+      // left: 25%;
+      // // width: 40%;
       text-align: left;
-      padding: 6px 0 0 63px;
+      margin: -125px 0 0 25px;
+      width: 33%;
+      // transform: translate(-280px, -130px);
     }
   }
 
@@ -108,13 +95,13 @@
   .sofa__text {
     display: none;
 
-    @media (max-width: (@screen-xl - 1)) {
-      display: block;
-      top: 44px;
-      left: 20px;
-      transform: translate(0, 0);
-      z-index: 1;
-      text-align: left;
-    }
+    // @media (max-width: (@screen-xl - 1)) {
+    //   display: block;
+    //   top: 44px;
+    //   left: 20px;
+    //   transform: translate(0, 0);
+    //   z-index: 1;
+    //   text-align: left;
+    // }
   }
 }

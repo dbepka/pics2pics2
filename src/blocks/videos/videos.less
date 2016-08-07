@@ -62,12 +62,21 @@
     }
 
     &--empty {
-      background: #fae1dc url(../img/top-pict.svg) center no-repeat;
-
+      text-align: center;
       &:before {
         display: none;
       }
     }
+  }
+  
+  &__text-title {
+    font-size: 43px;
+    letter-spacing: 0.220em;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #fff5ff;
+    margin: 0;
+    transform: translate(0%, 50%);
   }
 
   &__text {
@@ -95,6 +104,14 @@
     letter-spacing: 0.22em;
     color: #0044cc;
     margin: 0;
+    margin-bottom: 50px;
+  }
+
+  &__play {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
   }
 
 }
