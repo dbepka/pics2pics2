@@ -1,5 +1,10 @@
 @import '../../less/variables.less';     // только для удобства обращения к переменным
 
+#sofa_img {
+  display: block;
+  height: 100px;
+  transition: all 0.5s ease-in-out;
+}
 
 .sofa {
   position: relative;
@@ -39,6 +44,15 @@
       &::placeholder {
         color: #212121 !important;
         font-weight: 400 !important;
+      }
+
+      &--error-border {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border: 1px solid #e6003e;
+        border-radius: 16px;
+        box-shadow: 0 3px 5px rgba(230, 0, 62, 0.35);
       }
     }
 
@@ -288,6 +302,7 @@
 
     .sofa__sizes-item {
       transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      transition: all 0.5s ease-out;
     }
 
     &--visible {
@@ -310,9 +325,9 @@
     letter-spacing: 0.29em;
     color: #888888;
     text-transform: uppercase;
-    transition: all 0.3s ease-out;
+    transition: all 0.5s ease-out;
     box-shadow: 0 5px 5px rgba(0,0,0,0.16);
-    animation: size-show 0.3s ease-out 0s 1;
+    animation: size-show 0.5s ease-out 0s 1;
 
     &:hover, &:focus, &--active {
       color: #fff;
