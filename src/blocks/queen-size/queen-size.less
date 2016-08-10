@@ -2,6 +2,21 @@
 
 @import '../../less/variables.less';     // только для удобства обращения к переменным
 
+.queen-msg {
+    margin-top: 90px;
+    padding: 20px;
+    background-color: #ffffcc;
+    text-align: center;
+
+  p {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+
+  }
+}
+
 
 .queen-size {
   height: 736px;
@@ -19,7 +34,7 @@
   &__title {
     display: block;
     font-size: 44px;
-    line-height: 62px;
+    line-height: 56px;
     color: #fff;
     font-weight: 400;
     text-transform: uppercase;
@@ -45,6 +60,23 @@
         width: 50px;
       }
     }
+    &--noSmile {
+      &:after {
+        content: '';
+        background: none;
+      }
+    }
+  }
+
+  &__subtitle {
+    display: block;
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1em;
   }
 
   &__item {
