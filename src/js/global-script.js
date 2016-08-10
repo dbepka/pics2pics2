@@ -93,13 +93,9 @@ jQuery( document ).ready(function($) {
 
   var form = $('#field-file__input');
     form.change(function(){
-        // if ($(window).width() >= 1280) {
-          stickyForm();
-            $('.style-form').animate({bottom: 0}, 500);
-        // } else {
-            // $('.style-form').animate({left: 0}, 500);
-            $('#supsofa-sizes').css('display', 'flex');
-        // }
+      $('#supsofa-sizes').css('display', 'flex');
+      stickyForm();
+      $('.style-form').animate({bottom: 0}, 500);
     });
 
   //tooltip
